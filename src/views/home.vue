@@ -32,7 +32,7 @@
                         <i class="el-icon-location"></i>
                         <span>用戶管理</span>
                     </template>
-                    <el-menu-item index="/user">
+                    <el-menu-item index="/users">
                         <i class="el-icon-menu"></i>
                         用戶列表
                     </el-menu-item>
@@ -96,7 +96,9 @@
 
             </el-menu>
         </el-aside>
-        <el-main class="main">Main</el-main>
+        <el-main class="main">
+            <router-view></router-view>
+        </el-main>
     </el-container>
 </el-container>
 </template>
